@@ -12,9 +12,9 @@ export const perspective = {
         translateX: 0,
         transition: {
             duration: 0.65, 
-            delay: 0.5 + (i * 0.1), 
+            delay: 0.2 + (i * 0.1), 
             ease: [.215,.61,.355,1],
-            opacity: { duration: 0.35}
+            opacity: { duration: 0.15}
         }
     }),
     exit: {

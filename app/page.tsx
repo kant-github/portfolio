@@ -26,7 +26,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className='bg-neutral-950'>
+    <div className='bg-neutral-950 mx-12'>
       <AnimatePresence mode='wait'>
         {isLoading && <PreLoader />}
       </AnimatePresence>
@@ -35,13 +35,15 @@ export default function Home() {
 
         <div className='w-[50%]'>
           <LandingLeftText />
-          <SvgLineDescription />
+          <div >
+            <SvgLineDescription />
+          </div>
         </div>
 
-        <div className='p-12 mr-20 flex-1'>
+        <div className='p-12'>
           <Image
             src={"/images/muskan-1.jpg"}
-            width={1200}
+            width={550}
             height={400}
             alt='user'
             className='rounded-2xl'

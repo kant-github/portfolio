@@ -1,17 +1,17 @@
 import styles from '../../styles/ZoomParallex.module.scss';
-import Picture1 from '../../../public/images/1.jpeg';
-import Picture2 from '../../../public/images/2.jpeg';
-import Picture3 from '../../../public/images/3.jpg';
-import Picture4 from '../../../public/images/4.jpg'
-import Picture5 from '../../../public/images/5.jpg'
-import Picture6 from '../../../public/images/6.jpg'
-import Picture7 from '../../../public/images/7.jpeg'
+import Picture1 from '../../../public/images/muskan-3.jpeg';
+import Picture2 from '../../../public/images/muskan-2.jpeg';
+import Picture3 from '../../../public/images/muskan-1.jpg';
+import Picture4 from '../../../public/images/muskan-4.jpeg'
+import Picture5 from '../../../public/images/muskan-5.jpeg'
+import Picture6 from '../../../public/images/muskan-6.jpeg'
+import Picture7 from '../../../public/images/muskan-7.jpeg'
 import Image from 'next/image';
-import { useScroll, useTransform, motion} from 'framer-motion';
+import { useScroll, useTransform, motion } from 'framer-motion';
 import { useRef } from 'react';
 
 export default function ZoomParallex() {
-    
+
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -59,9 +59,9 @@ export default function ZoomParallex() {
         <div ref={container} className={styles.container}>
             <div className={styles.sticky}>
                 {
-                    pictures.map( ({src, scale}, index) => {
-                        return <motion.div key={index} style={{scale}} className={styles.el}>
-                            <div className={styles.imageContainer}>
+                    pictures.map(({ src, scale }, index) => {
+                        return <motion.div key={index} style={{ scale }} className={styles.el}>
+                            <div className={`${styles.imageContainer} ${index !== 0 ? styles.blackAndWhite : ''}`}>
                                 <Image
                                     src={src}
                                     fill

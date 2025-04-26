@@ -11,14 +11,14 @@ const menu = {
         height: "650px",
         top: "-25px",
         right: "-25px",
-        transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1] }
+        transition: { duration: 0.50, type: "tween", ease: [0.76, 0, 0.24, 1] }
     },
     closed: {
         width: "100px",
         height: "40px",
         top: "0px",
         right: "0px",
-        transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1] }
+        transition: { duration: 0.50, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1] }
     }
 }
 
