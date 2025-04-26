@@ -1,6 +1,7 @@
 import Text3d from '../3d/Text3d';
 import styles from '../../styles/LandingLeftText.module.scss'
 import { useRef } from 'react';
+import SvgLineDescription from '../ui/SvgLineDescription';
 
 export default function LandingLeftText() {
 
@@ -21,8 +22,7 @@ export default function LandingLeftText() {
       <div ref={plane} className={styles.body}>
         <Text3d primary={"Muskan"} secondary={"Singer"} />
         <Text3d primary={"Aggarwal"} secondary={"Freelancer"} />
-        {/* <Text3d primary={"Music"} secondary={"Into"} />
-        <Text3d primary={"Freelance"} secondary={"Shapes"} /> */}
+        <div className='text-[#eb4646] mt-8 font-semibold text-md'>Tuning Brands & Ragas—One Note, One Click at a Time</div>
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
-import MainImage from "@/src/components/landing/MainImage";
+import Header from "@/src/components/Header/Header";
 
 export default function Test() {
     return (
-        <MainImage />
+        <Header/>
     )
 }

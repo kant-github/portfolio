@@ -2,8 +2,8 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion';
 import styles from '../../styles/Header.module.scss';
-import Button from '../buttons/Button';
 import Nav from '../Nav/Nav';
+import Button from '../buttons/Button';
 
 const menu = {
     open: {
@@ -37,7 +37,7 @@ export default function Header() {
                     {isActive && <Nav />}
                 </AnimatePresence>
             </motion.div>
-            <Button isActive={isActive} toggleMenu={() => { console.log("clicked"); setIsActive(!isActive) }} />
+            <Button isActive={isActive} toggleMenu={() => { setIsActive(!isActive) }} />
         </div>
     )
 }
