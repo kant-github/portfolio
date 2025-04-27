@@ -28,7 +28,7 @@ export default function LandingLeftText() {
 
       </div>
 
-        <div className='text-red-500 mt-8 ml-7 font-semibold text-md'>Tuning Brands & Ragas—One Note, One Click at a Time</div>
+        <div className='text-[#eb4646] mt-8 ml-7 font-semibold text-md'>Tuning Brands & Ragas—One Note, One Click at a Time</div>
         {/* <SvgLineDescription /> */}
 
     </div>

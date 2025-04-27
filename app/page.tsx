@@ -7,6 +7,10 @@ import LandingLeftText from '@/src/components/landing/LandingLeftText';
 import Image from 'next/image';
 import SvgLineDescription from '@/src/components/ui/SvgLineDescription';
 import ZoomParallex from '@/src/components/landing/ZoomParallex';
+import CursorHoverMask from '@/src/components/ui/CursorHoverMask';
+import HoverBorderGradient from '@/src/components/ui/HoverBorderGradient';
+import { Spotlight } from '@/src/components/ui/spotlight-new';
+import { TimelineView } from '@/src/components/ui/TimelineView';
 
 
 export default function Home() {
@@ -26,13 +30,13 @@ export default function Home() {
   }, [])
 
   return (
-    <div className='bg-neutral-950 mx-12'>
+    <div className='bg-neutral-950'>
       <AnimatePresence mode='wait'>
         {isLoading && <PreLoader />}
       </AnimatePresence>
       <Header />
-      <div className='flex items-center justify-between h-screen'>
-
+      {/* <Spotlight /> */}
+      <div className='flex items-center justify-between h-screen mx-16'>
         <div className='w-[50%]'>
           <LandingLeftText />
           <div >
@@ -52,6 +56,8 @@ export default function Home() {
 
       </div>
       <ZoomParallex />
+      <CursorHoverMask />
+      <TimelineView />
     </div>
   )
 }
